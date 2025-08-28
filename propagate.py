@@ -88,8 +88,8 @@ def propagate(sat: SatelliteTLE, tsince_minutes) -> tuple:
     if error_code != 0:
         # Refer to sgp4 documentation for detailed error meanings
         raise ValueError(f"Error code: {error_code}")
-    else:
-        return position, velocity
+
+    return position, velocity
 
 
 
